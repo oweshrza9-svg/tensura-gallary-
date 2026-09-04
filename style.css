@@ -84,6 +84,8 @@ li a:hover{
 
 .first-hero {
     flex: 1;
+    justify-content: center;
+    align-items: center;
 }
 
 .second-hero {
@@ -102,7 +104,48 @@ li a:hover{
     bottom: 0;
     transform: translateX(-50%);
 }
-.h1-first-hero , .h3-first-hero , .p-first-hero{
+.h1-first-hero , .h5-first-hero , .p-first-hero{
                  color: #8B1E2D;
                  padding-left: 30px;
+}
+
+.h1-first-hero{
+     
+    margin-top: 60PX;
+    margin-left: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+}
+
+
+.h5-first-hero{
+       margin-top: 0;
+       margin-left: 40px;
+      font-family: "Arial Black", Arial, sans-serif;
+      font-family: "Anton", sans-serif;
+      font-weight: 200;
+      
+}
+
+.p-first-hero{
+        margin-top: 0;
+       margin-left: 40px;
+       font-family: cursive;
+}
+.hero-kn{
+          margin-left: 110px;
+          background-color: #8B1E2D; 
+          color: whitesmoke;  
+          padding: 10px 28px;
+          font-family: cursive;
+          border-radius: 10px;
+          
+
+}
+.p-third-hero{
+    margin-top: 150px;
+}
+
+.h1-first-main{
+    color: #2B3034;
 }
