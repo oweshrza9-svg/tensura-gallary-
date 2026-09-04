@@ -5,7 +5,7 @@ body{
 
 }
 .container{
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
   padding: 2rem;
   background-color:#FDFEE8;
@@ -16,13 +16,29 @@ body{
 .nav-list{
      display: flex;
     justify-content: flex-end;
-    color: #f2f2f2;
-    background-color: #031725;
-    border-radius: 30px;
+    align-items: center;
     gap: 8rem;
+   
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
     padding: 20px 34px 20px 0;
     position: relative;
+    right: 30px;
 }
+
+
+.nav-list li a.home-li,.nav-list li a.about-li{
+    color: #8B1E2D;
+    opacity: 0.7;
+    font-weight: 100;
+}
+
+
+
 li{
     text-decoration: none;
      list-style: none;
@@ -32,7 +48,7 @@ li{
      width: 20px;
      height: 25px;
      border-radius: 50%;
-     margin-right: 70px;
+     
      position: absolute;
      left: 45px;
      top : 15px
@@ -54,9 +70,39 @@ li a:hover{
 .header{
     margin: 0;
     background-image: url("img/herobg.png");
-    height: 600px;
+    height: 677px;
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+.hero {
+    display: flex;
+    position: relative;
+    height: 600px;
+}
+
+.first-hero {
+    flex: 1;
+}
+
+.second-hero {
+    flex: 1;
+    position: relative;
+}
+
+.third-hero {
+    flex: 1;
+}
+
+.testa-img {
+    width: 400px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+.h1-first-hero , .h3-first-hero , .p-first-hero{
+                 color: #8B1E2D;
+                 padding-left: 30px;
 }
