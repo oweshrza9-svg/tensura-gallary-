@@ -1,152 +1,181 @@
-body{
-    margin: 0;
-    background-color: #F7E1D3;
-    color:#f2f2f2;
-
-}
-.container{
-  max-width: 1300px;
-  margin: 0 auto;
-  padding: 2rem;
-  background-color:#FDFEE8;
-  min-height: 300px; /* ensures background shows */
-  color: #f2f2f2;
-}
-
-.nav-list{
-     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 8rem;
-   
-    background: rgba(255, 255, 255, 0.12);
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
-
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 30px;
-    padding: 20px 34px 20px 0;
-    position: relative;
-    right: 30px;
-}
-
-
-.nav-list li a.home-li,.nav-list li a.about-li{
-    color: #8B1E2D;
-    opacity: 0.7;
-    font-weight: 100;
-}
-
-
-
-li{
-    text-decoration: none;
-     list-style: none;
-     display: block;
-}
-.logo1{
-     width: 20px;
-     height: 25px;
-     border-radius: 50%;
-     
-     position: absolute;
-     left: 45px;
-     top : 15px
-     
-}
-.nav-list li a{
-    text-decoration: none;
-    color: #f2f2f2;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 800;
-    transition: 0.3s ease;
-    justify-content: center;
-    margin-top: 10px;
+body{ 
+    margin: 0; 
+    background-color: #F7E1D3; 
+    color:#f2f2f2; 
+ 
+} 
+.container{ 
+  max-width: 1300px; 
+  margin: 0 auto; 
+  padding: 2rem; 
+  background-color:#FDFEE8; 
+  min-height: 300px; /* ensures background shows */ 
+  color: #f2f2f2; 
+} 
+ 
+.nav-list{ 
+     display: flex; 
+    justify-content: flex-end; 
+    align-items: center; 
+    gap: 8rem; 
     
-}
-li a:hover{
-    color: rgb(138, 210, 222);
-}
-.header{
-    margin: 0;
-    background-image: url("img/herobg.png");
-    height: 677px;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.hero {
-    display: flex;
-    position: relative;
-    height: 600px;
-}
-
-.first-hero {
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-}
-
-.second-hero {
-    flex: 1;
-    position: relative;
-}
-
-.third-hero {
-    flex: 1;
-}
-
-.testa-img {
-    width: 400px;
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
-}
-.h1-first-hero , .h5-first-hero , .p-first-hero{
-                 color: #8B1E2D;
-                 padding-left: 30px;
-}
-
-.h1-first-hero{
-     
-    margin-top: 60PX;
-    margin-left: 40px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: bolder;
-}
-
-
-.h5-first-hero{
-       margin-top: 0;
-       margin-left: 40px;
-      font-family: "Arial Black", Arial, sans-serif;
-      font-family: "Anton", sans-serif;
-      font-weight: 200;
+    background: rgba(255, 255, 255, 0.12); 
+    backdrop-filter: blur(15px); 
+    -webkit-backdrop-filter: blur(15px); 
+ 
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+    border-radius: 30px; 
+    padding: 20px 34px 20px 0; 
+    position: relative; 
+    right: 30px; 
+} 
+ 
+ 
+.nav-list li a.home-li,.nav-list li a.about-li{ 
+    color: #8B1E2D; 
+    opacity: 0.7; 
+    font-weight: 100; 
+} 
+ 
+ 
+ 
+li{ 
+    text-decoration: none; 
+     list-style: none; 
+     display: block; 
+} 
+.logo1{ 
+     width: 20px; 
+     height: 25px; 
+     border-radius: 50%; 
       
+     position: absolute; 
+     left: 45px; 
+     top : 15px 
+      
+} 
+.nav-list li a{ 
+    text-decoration: none; 
+    color: #f2f2f2; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    font-weight: 800; 
+    transition: 0.3s ease; 
+    justify-content: center; 
+    margin-top: 10px; 
+     
+} 
+li a:hover{ 
+    color: rgb(138, 210, 222); 
+} 
+.header{ 
+    margin: 0; 
+    background-image: url("img/herobg.png"); 
+    height: 677px; 
+    background-attachment: fixed; 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+} 
+.hero { 
+    display: flex; 
+    position: relative; 
+    height: 600px; 
+} 
+ 
+.first-hero { 
+    flex: 1; 
+    justify-content: center; 
+    align-items: center; 
+} 
+ 
+.second-hero { 
+    flex: 1; 
+    position: relative; 
+} 
+ 
+.third-hero { 
+    flex: 1; 
+} 
+ 
+.testa-img { 
+    width: 400px; 
+    position: absolute; 
+    left: 50%; 
+    bottom: 0; 
+    transform: translateX(-50%); 
+} 
+.h1-first-hero , .h5-first-hero , .p-first-hero{ 
+                 color: #8B1E2D; 
+                 padding-left: 30px; 
+} 
+ 
+.h1-first-hero{ 
+      
+    margin-top: 60PX; 
+    margin-left: 40px; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    font-weight: bolder; 
+} 
+ 
+ 
+.h5-first-hero{ 
+       margin-top: 0; 
+       margin-left: 40px; 
+      font-family: "Arial Black", Arial, sans-serif; 
+      font-family: "Anton", sans-serif; 
+      font-weight: 200; 
+       
+} 
+ 
+.p-first-hero{ 
+        margin-top: 0; 
+       margin-left: 40px; 
+       font-family: cursive; 
+} 
+.hero-kn{ 
+          margin-left: 110px; 
+          background-color: #8B1E2D;  
+          color: whitesmoke;   
+          padding: 10px 28px; 
+          font-family: cursive; 
+          border-radius: 10px; 
+           
+ 
+} 
+.p-third-hero{ 
+    margin-top: 150px; 
+} 
+ 
+.h1-first-main{ 
+    color: #2B3034; 
+} 
+.card img { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    border-radius: 25px; 
+    width: 350px; 
+    height: 490px; 
+}  
+.container-card{ 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items:center; 
+    /* overflow: hidden;; */ 
+ 
+} 
+.character-name , .character-des{ 
+    color: #2B3034; 
+     
+    width: 340px; 
+} 
+ 
+.card{ 
+    display: block; 
+     
+    box-shadow: 0 8px 16px hsla(256, 75%, 4%, .1); 
+    padding: 2rem 1.5rem 3rem; 
+    border-radius: 1.5rem; 
+    text-align: center; 
 }
-
-.p-first-hero{
-        margin-top: 0;
-       margin-left: 40px;
-       font-family: cursive;
-}
-.hero-kn{
-          margin-left: 110px;
-          background-color: #8B1E2D; 
-          color: whitesmoke;  
-          padding: 10px 28px;
-          font-family: cursive;
-          border-radius: 10px;
-          
-
-}
-.p-third-hero{
-    margin-top: 150px;
-}
-
-.h1-first-main{
-    color: #2B3034;
-}
-
