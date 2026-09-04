@@ -167,15 +167,20 @@ li a:hover{
 } 
 .character-name , .character-des{ 
     color: #2B3034; 
-     
     width: 340px; 
+    display: block;
+    margin: 0 auto;
 } 
  
 .card{ 
     display: block; 
-     
     box-shadow: 0 8px 16px hsla(256, 75%, 4%, .1); 
     padding: 2rem 1.5rem 3rem; 
     border-radius: 1.5rem; 
     text-align: center; 
+}   
+.swiper-wraper{
+           width: 360px;
+           height: 550px;
+
 }
