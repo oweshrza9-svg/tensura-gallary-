@@ -1,0 +1,62 @@
+body{
+    margin: 0;
+    background-color: #F7E1D3;
+    color:#f2f2f2;
+
+}
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color:#FDFEE8;
+  min-height: 300px; /* ensures background shows */
+  color: #f2f2f2;
+}
+
+.nav-list{
+     display: flex;
+    justify-content: flex-end;
+    color: #f2f2f2;
+    background-color: #031725;
+    border-radius: 30px;
+    gap: 8rem;
+    padding: 20px 34px 20px 0;
+    position: relative;
+}
+li{
+    text-decoration: none;
+     list-style: none;
+     display: block;
+}
+.logo1{
+     width: 20px;
+     height: 25px;
+     border-radius: 50%;
+     margin-right: 70px;
+     position: absolute;
+     left: 45px;
+     top : 15px
+     
+}
+.nav-list li a{
+    text-decoration: none;
+    color: #f2f2f2;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 800;
+    transition: 0.3s ease;
+    justify-content: center;
+    margin-top: 10px;
+    
+}
+li a:hover{
+    color: rgb(138, 210, 222);
+}
+.header{
+    margin: 0;
+    background-image: url("img/herobg.png");
+    height: 600px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
