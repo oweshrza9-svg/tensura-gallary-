@@ -97,5 +97,5 @@ function getRimuruResponse(question) {
         return "Tempest is filled with powerful skills and unique abilities.";
     }
 
-    return "Hmm... I don't know that yet. Try asking me about Tempest!";
+    return "U see my master is a dumb guy he was so bored that he didnt even added the css for this sections";
 }
