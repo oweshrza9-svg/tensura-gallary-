@@ -17,8 +17,85 @@ const swiper = new Swiper('.swiper', {
   },
 });
 
-const rimuru = document.getElementById("rimuru-img");
+const rimuru = document.getElementById("rimuru");
+const chat = document.getElementById("assistantChat");
+const closeChat = document.getElementById("closeChat");
 
-rimuru.addEventListener("click" , function (){
-      console.log("I got slapped ")
-})
+const input = document.getElementById("userInput");
+const sendBtn = document.getElementById("sendBtn");
+const messages = document.getElementById("chatMessages");
+
+
+// OPEN CHAT
+rimuru.addEventListener("click", () => {
+    chat.style.display = "flex";
+    input.focus();
+});
+
+
+// CLOSE CHAT
+closeChat.addEventListener("click", () => {
+    chat.style.display = "none";
+});
+
+
+// SEND MESSAGE
+sendBtn.addEventListener("click", sendMessage);
+
+input.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+        sendMessage();
+    }
+});
+
+
+function sendMessage() {
+
+    const question = input.value.trim();
+
+    if (!question) return;
+
+    messages.innerHTML += `
+        <div class="user-message">
+            ${question}
+        </div>
+    `;
+
+    const answer = getRimuruResponse(question);
+
+    messages.innerHTML += `
+        <div class="bot-message">
+            ${answer}
+        </div>
+    `;
+
+    input.value = "";
+}
+
+
+function getRimuruResponse(question) {
+
+    const q = question.toLowerCase();
+
+    if (q.includes("hello") || q.includes("hi")) {
+        return "Hey! Welcome to Tempest.";
+    }
+
+    if (q.includes("rimuru")) {
+        return "That's me! The ruler of the Jura Tempest Federation.";
+    }
+
+    if (q.includes("tempest")) {
+        return "Jura Tempest Federation is a nation built by Rimuru.";
+    }
+
+    if (q.includes("character")) {
+        return "You can explore Tempest's characters in the Characters section.";
+    }
+
+    if (q.includes("skill")) {
+        return "Tempest is filled with powerful skills and unique abilities.";
+    }
+
+    return "Hmm... I don't know that yet. Try asking me about Tempest!";
+}

@@ -304,9 +304,35 @@
            </nav>
            <p class="footer-note">Fan-made Tensura showcase · © 2026</p>
        </footer>
-       <div class="ai">
-            <img src="img/testa/kutta.png" alt="rimuru" id="rimuru-img" onclick="">
-       </div>
+    
+   <div class="rimuru-assistant">
+
+    <!-- ONLY THIS IS VISIBLE INITIALLY -->
+    <img src="img/testa/kutta.png" alt="rimuru" id="rimuru">
+
+    <!-- EVERYTHING BELOW APPEARS AFTER CLICK -->
+    <div class="assistant-chat" id="assistantChat">
+
+        <div class="chat-header">
+            <span>Rimuru</span>
+            <button id="closeChat">×</button>
+        </div>
+
+        <div class="chat-messages" id="chatMessages"></div>
+
+        <div class="chat-input">
+            <input
+                type="text"
+                id="userInput"
+                placeholder="Ask Rimuru..."
+            >
+            <button id="sendBtn">➤</button>
+        </div>
+
+    </div>
+
+</div>
+       
 
     </section>
 
