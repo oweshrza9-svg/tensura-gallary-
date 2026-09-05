@@ -1,6 +1,6 @@
 body{ 
     margin: 0; 
-    background-color: #F7E1D3; 
+    background: linear-gradient(135deg, #ffffff 0%, #242424 48%, #000000 100%);
     color:#f2f2f2; 
  
 } 
@@ -8,7 +8,9 @@ body{
   max-width: 1300px; 
   margin: 0 auto; 
   padding: 2rem; 
-  background-color:#FDFEE8; 
+  background:
+    radial-gradient(circle at 20% 22%, rgba(255, 255, 255, .14), transparent 28%),
+    linear-gradient(135deg, #f7f7f7 0%, #171717 52%, #030303 100%);
   min-height: 300px; /* ensures background shows */ 
   color: #f2f2f2; 
 } 
@@ -146,42 +148,131 @@ li a:hover{
     margin-top: 150px; 
 } 
  
-.h1-first-main{ 
-    color: #2B3034; 
-} 
-.card img { 
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover; 
-    border-radius: 25px; 
-    width: 350px; 
-    height: 490px; 
-}  
-.container-card{ 
-    
-    /* overflow: hidden;; */ 
- 
-} 
-.character-name , .character-des{ 
-    color: #2B3034; 
-    width: 340px; 
-    display: block;
-    margin: 0 auto;
-} 
- 
-.card{ 
-    display: block; 
-    box-shadow: 0 8px 16px hsla(256, 75%, 4%, .1); 
-    padding: 2rem 1.5rem 3rem; 
-    border-radius: 1.5rem; 
+.h1-first-main {
+    color: #fff;
+    margin: 4rem 0 2.5rem;
     text-align: center;
-    display: flex; 
-    flex-direction: column; 
-    justify-content: center; 
-    align-items:center;  
-}   
-.swiper-wraper{
-           width: 360px;
-           height: 550px;
+    font-family: Arial, sans-serif;
+}
 
+/* Character carousel cards */
+.container-art {
+    position: relative;
+    width: min(100%, 1120px);
+    margin: 0 auto 3rem;
+    padding: 1.5rem 3.5rem 3rem;
+    overflow: hidden;
+}
+
+.card {
+    box-sizing: border-box;
+    min-height: 365px;
+    padding: 1.75rem 1.35rem 1.5rem;
+    border-radius: 1.25rem;
+    background: linear-gradient(145deg, rgba(255, 255, 255, .24), rgba(255, 255, 255, .05));
+    border: 1px solid rgba(255, 255, 255, .38);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, .32);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform .3s ease, box-shadow .3s ease, background .3s ease;
+}
+
+.card img {
+    width: 104px;
+    height: 104px;
+    flex: 0 0 104px;
+    object-fit: cover;
+    border: 3px solid rgba(255, 255, 255, .82);
+    border-radius: 50%;
+    box-shadow: 0 0 0 5px rgba(0, 0, 0, .18);
+    transition: transform .3s ease;
+}
+
+.character-name,
+.character-role,
+.character-des {
+    color: #fff;
+    width: auto;
+    margin: 0;
+}
+
+.character-name {
+    margin-top: 1rem;
+    font: 700 1.1rem/1.2 Arial, sans-serif;
+}
+
+.character-role {
+    margin: .4rem 0 0;
+    color: rgba(255, 255, 255, .72);
+    font: 600 .76rem/1.25 Arial, sans-serif;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+}
+
+.character-des {
+    margin-top: .65rem;
+    font: .9rem/1.35 Arial, sans-serif;
+    color: rgba(255, 255, 255, .88);
+}
+
+/* Details rise in when the visitor explores a card. */
+.character-name,
+.character-role,
+.character-des {
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity .28s ease, transform .28s ease;
+}
+
+.card:hover,
+.card:focus-within {
+    background: linear-gradient(145deg, rgba(255, 255, 255, .38), rgba(255, 255, 255, .12));
+    box-shadow: 0 18px 36px rgba(0, 0, 0, .48);
+    transform: translateY(-12px) scale(1.025);
+}
+
+.card:hover img,
+.card:focus-within img {
+    transform: translateY(-12px) scale(.9);
+}
+
+.card:hover .character-name,
+.card:hover .character-role,
+.card:hover .character-des,
+.card:focus-within .character-name,
+.card:focus-within .character-role,
+.card:focus-within .character-des {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: #087cf0;
+    font-weight: 800;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    font-size: 2rem;
+}
+
+.swiper-pagination-bullet-active {
+    background: #087cf0;
+}
+
+/* The tutorial uses arrow controls only. */
+.swiper-pagination,
+.swiper-scrollbar {
+    display: none;
+}
+
+@media (max-width: 650px) {
+    .container-art { padding-inline: 2.75rem; }
+    .card { min-height: 340px; }
 }
