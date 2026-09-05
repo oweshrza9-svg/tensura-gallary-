@@ -20,7 +20,7 @@
 
     <section class="container">
 
-           <header class="header">
+           <header class="header" id="home">
 
                 <nav class="nav">
 
@@ -28,13 +28,13 @@
 
                         <li><img src="img/RIMURU TEMPEST.jpg" alt="Logo" class="logo1"></li>
 
-                        <li><a href="#" class="home-li">Home</a></li>
+                        <li><a href="#home" class="home-li">Home</a></li>
 
-                        <li><a href="#"  class="about-li">About</a></li>
+                        <li><a href="#about"  class="about-li">About</a></li>
 
-                        <li><a href="#">Services</a></li>
+                        <li><a href="#services">Services</a></li>
 
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#contact">Contact</a></li>
 
                     </ul>
 
@@ -66,7 +66,7 @@
 
                              </p>
 
-                             <button class="hero-kn">Lets go</button>
+                             <a class="hero-kn" href="#characters">Let's go</a>
 
                     </div>
 
@@ -98,7 +98,7 @@
 
 
 
-           <h1 class="h1-first-main">
+           <h1 class="h1-first-main" id="characters">
 
              The Legendery characters Gallary!
 
@@ -248,10 +248,62 @@
 
       <!-- the chloe section  -->
        <section class="chloe">
-              <h1 class="chloe-heading">
-                  The first Hero
-              </h1>
+              <div class="chloe-panel">
+                  <div class="chloe-copy">
+                      <p class="chloe-kicker">THE HERO OF TIME</p>
+                      <h1 class="chloe-heading">Chloe<br>Aubert<span>.</span></h1>
+                      <p class="chloe-description">A kind-hearted student whose journey across time connects the fate of Rimuru, Shizu, and the legendary hero Chronoa.</p>
+                  </div>
+
+                  <div class="chloe-portrait">
+                      <img src="img/testa/𝐓𝐡𝐞 𝐌𝐚𝐬𝐤𝐞𝐝 𝐂𝐡𝐨𝐬𝐞𝐧 𝐇𝐞𝐫𝐨 - 𝐂𝐡𝐥𝐨𝐞 𝐀𝐮𝐛𝐞𝐫𝐭.jpg" alt="Chloe Aubert in her hero form">
+                  </div>
+
+                  <div class="chloe-details">
+                      <div class="chloe-dots" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+                      <p>IDENTITY</p>
+                      <h2>Chloe Aubert</h2>
+                      <p>ROLE</p>
+                      <h2>Time Traveler · Chosen Hero</h2>
+                      <div class="chloe-mark" aria-hidden="true">◇</div>
+                  </div>
+              </div>
        </section>
+
+       <section class="info-section" id="about">
+           <p class="section-label">ABOUT TEMPEST</p>
+           <h2>A nation where every ally has a place.</h2>
+           <p>Jura Tempest Federation is built on trust, growth, and the belief that humans and monsters can create a future together. This gallery celebrates the people who make that story possible.</p>
+       </section>
+
+       <section class="services-section" id="services">
+           <p class="section-label">EXPLORE THE WORLD</p>
+           <h2>What you can discover</h2>
+           <div class="service-grid">
+               <article><span>01</span><h3>Characters</h3><p>Meet Tempest’s allies, rulers, dragons, and demons.</p></article>
+               <article><span>02</span><h3>Skills</h3><p>Follow the evolutions and powers that shape every battle.</p></article>
+               <article><span>03</span><h3>History</h3><p>Trace the bonds and events behind the Jura Tempest Federation.</p></article>
+           </div>
+       </section>
+
+       <footer class="site-footer" id="contact">
+           <div class="footer-brand">
+               <img src="img/RIMURU TEMPEST.jpg" alt="Tempest logo">
+               <div><strong>Jura Tempest</strong><span>Character archive</span></div>
+           </div>
+           <div class="footer-contact">
+               <p class="section-label">CONTACT</p>
+               <a href="mailto:tempest@jura.example">tempest@jura.example</a>
+               <p>Great Jura Forest · Cardinal World</p>
+           </div>
+           <nav class="footer-links" aria-label="Footer navigation">
+               <a href="#home">Home</a>
+               <a href="#about">About</a>
+               <a href="#services">Services</a>
+               <a href="#characters">Characters</a>
+           </nav>
+           <p class="footer-note">Fan-made Tensura showcase · © 2026</p>
+       </footer>
 
     </section>
 
