@@ -622,8 +622,8 @@ li a:hover{
     right: 0;
     bottom: 110px;
 
-    width: 320px;
-    height: 400px;
+    width: 250px;
+    height: 260px;
 
     background: rgba(15, 15, 20, 0.9);
     backdrop-filter: blur(15px);
