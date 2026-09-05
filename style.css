@@ -593,4 +593,17 @@ li a:hover{
     .site-footer { gap: 1.35rem; padding: 2rem 1.25rem 1rem; }
 }
 
+ .ai{
+    position: relative;
+ }
 
+#rimuru-img{
+     position: fixed;
+     bottom: 40px;
+     right: 40px;
+     width: 100px;
+     background-position: center;
+     
+ }
+
+ 

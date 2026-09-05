@@ -16,3 +16,9 @@ const swiper = new Swiper('.swiper', {
     1100: { slidesPerView: 4 },
   },
 });
+
+const rimuru = document.getElementById("rimuru-img");
+
+rimuru.addEventListener("click" , function (){
+      console.log("I got slapped ")
+})
