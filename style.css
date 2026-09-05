@@ -29,7 +29,7 @@ body{
     border-radius: 30px; 
     padding: 20px 34px 20px 0; 
     position: relative; 
-    right: 30px; 
+    right: 0px; 
 } 
  
  
@@ -152,7 +152,7 @@ li a:hover{
     color: #fff;
     margin: 4rem 0 2.5rem;
     text-align: center;
-    font-family: Arial, sans-serif;
+    font-family:cursive;
 }
 
 /* Character carousel cards */
@@ -167,6 +167,7 @@ li a:hover{
 .card {
     box-sizing: border-box;
     min-height: 365px;
+    height: 400px;
     padding: 1.75rem 1.35rem 1.5rem;
     border-radius: 1.25rem;
     background: linear-gradient(145deg, rgba(255, 255, 255, .24), rgba(255, 255, 255, .05));
@@ -188,7 +189,7 @@ li a:hover{
     flex: 0 0 104px;
     object-fit: cover;
     border: 3px solid rgba(255, 255, 255, .82);
-    border-radius: 50%;
+    border-radius: 20%;
     box-shadow: 0 0 0 5px rgba(0, 0, 0, .18);
     transition: transform .3s ease;
 }
@@ -276,3 +277,26 @@ li a:hover{
     .container-art { padding-inline: 2.75rem; }
     .card { min-height: 340px; }
 }
+
+.chloe{
+    
+    height: 750px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(img/testa/𝙩𝙚𝙣𝙨𝙪𝙧𝙖\ 𖤐\ 𝙬𝙖𝙡𝙡𝙥𝙖𝙥𝙚𝙧.jpg);
+     position: relative;
+    overflow: hidden;
+    position: relative;
+  
+}
+
+   body::before {
+    /* content: "";
+    position: fixed;
+    inset: -20px;
+    background: inherit;
+    filter: blur(15px);
+    z-index: -2; */
+}
+
+
