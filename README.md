@@ -17,6 +17,7 @@ This project was built as a frontend side project to experiment with anime-inspi
 - 🔄 Randomized assistant responses
 - 📱 Responsive layout
 - 🚀 Deployed with Vercel
+- 🔄 Still in Production 
 
 ## 🛠️ Built With
 
